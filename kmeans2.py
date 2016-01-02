@@ -11,11 +11,11 @@ un_data = pd.read_csv('un.csv')
 # Which columns do you think will be the best to try to cluster on?
 # Columns to use = lifeMale, lifeFemale, infantMortality, GDPperCapita
 
-#Determine the data type of each column.
-print un_data.dtype
+#Determine the data type of each column. (each needed column: float64)
+print un_data.dtypes
 
 #How many countries are present in the dataset? 207
 # print "There are %s countries in the United Nations dataset." % \
-       un_data['country'].count()
+#       un_data['country'].count()
 
 #We're going to see how lifeMale, lifeFemale and infantMortality cluster according to GDPperCapita, keeping in mind that we don't know in advance how many clusters there will be.
