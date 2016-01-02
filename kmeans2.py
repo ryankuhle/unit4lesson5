@@ -12,8 +12,10 @@ un_data = pd.read_csv('un.csv')
 # Columns to use = lifeMale, lifeFemale, infantMortality, GDPperCapita
 
 #Determine the data type of each column.
-#How many countries are present in the dataset?
-print "There are %s countries United Nations dataset." % \
+print un_data.dtype
+
+#How many countries are present in the dataset? 207
+# print "There are %s countries in the United Nations dataset." % \
        un_data['country'].count()
 
 #We're going to see how lifeMale, lifeFemale and infantMortality cluster according to GDPperCapita, keeping in mind that we don't know in advance how many clusters there will be.
